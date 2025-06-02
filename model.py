@@ -8,7 +8,7 @@ data = pd.read_csv('/mnt/data/Marketing campaign dataset.csv')
 
 data['CTR'] = data['clicks'] / data['impressions']
 data['click'] = (data['CTR'] > 0).astype(int)  # Binary target: 1 if clicked, 0 otherwise
-
+//Bang
 data.fillna(data.median(), inplace=True)
 
 label_encoders = {}
